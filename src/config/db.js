@@ -4,7 +4,7 @@ require('dotenv').config();
 const connectionConfig = {
   host: 'mysql.railway.internal',
   user: 'root',
-  password: 'qzfoKQMXQkn1exwcwCJDzm1hyjTvAZhn',
+  password: 'qzfokQMXQknlexwcwCJDzmlhyjTvAZhn',
   database: 'railway',
   port: 3306,
   waitForConnections: true,
