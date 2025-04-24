@@ -20,7 +20,7 @@ app.use(express.json()); // Parse JSON bodies
 app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
 
 // Test database connection
-testConnection();
+testConnection().catch(console.error);
 
 // Routes
 app.use('/api', schoolRoutes);
@@ -55,6 +55,10 @@ app.use((err, req, res, next) => {
 });
 
 // Start server
-app.listen(PORT, () => {
+const server = app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on port ${PORT}`);
+  console.log('Environment variables:', {
+    PORT: process.env.PORT,
+    NODE_ENV: process.env.NODE_ENV
+  });
 });
