@@ -180,6 +180,6 @@ A simple Node.js/Express API for managing school information, including adding, 
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
+
 
 (Optional) Specify your license here, e.g., MIT License.
